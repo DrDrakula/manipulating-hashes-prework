@@ -8,6 +8,15 @@ def second_challenge
 
   #code your solution here!
 
-  
+  new_array = []
 
+  groceries.each do |type, product|
+    product.each do |item|
+      new_array.push(item)
+    end
+  end
+
+  new_array
 end
+
+puts second_challenge
